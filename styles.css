@@ -20,20 +20,20 @@ h2 {
   /* Adjust height as needed */
   background: url('assets/images/banyan_tree.jpg') no-repeat center center;
   background-size: cover;
-  text-align: center;
   color: white;
 }
 
 .banner-content {
   position: absolute;
   bottom: 10px;
-  left: 10px;
   right: 10px;
-  /* Ensures content doesn't exceed the banner width */
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  /* Aligns items to the start (left) */
+  justify-content: flex-end;
+  /* Align items to the right */
+  width: 100%;
+  max-width: 50%;
+  /* Text will not exceed half of the banner's width */
   padding: 10px;
   gap: 15px;
   /* Space between profile photo and text */
@@ -57,8 +57,8 @@ h2 {
 .banner-text {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  /* Align text to the left */
+  align-items: flex-end;
+  /* Align text to the right */
   color: white;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
   /* Black outline for white text */
@@ -67,6 +67,8 @@ h2 {
 .banner h1,
 .banner p {
   margin: 0;
+  text-align: right;
+  /* Right-align text within the banner-text container */
 }
 
 .banner h1 {
@@ -127,6 +129,11 @@ footer {
     height: 80px;
     bottom: -40px;
     /* Adjust position for smaller screens */
+  }
+
+  .banner-content {
+    max-width: 70%;
+    /* Adjust max-width for small screens */
   }
 
   .banner h1 {
