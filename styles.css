@@ -17,7 +17,6 @@ h2 {
   position: relative;
   width: 100%;
   height: 250px;
-  /* Adjust as needed */
   background: url('assets/images/banner-placeholder.jpg') no-repeat center center;
   background-size: cover;
   text-align: center;
@@ -29,11 +28,11 @@ h2 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  padding: 10px;
 }
 
 .profile-photo {
   width: 80px;
-  /* Adjust size as needed */
   height: 80px;
   border-radius: 50%;
   border: 2px solid white;
@@ -81,4 +80,90 @@ footer {
   padding: 20px;
   background-color: #333;
   color: white;
+}
+
+/* Responsive Design */
+
+/* Small devices (up to 767px) */
+@media (max-width: 767px) {
+  .banner {
+    height: 200px;
+  }
+
+  .profile-photo {
+    width: 60px;
+    height: 60px;
+  }
+
+  .banner h1 {
+    font-size: 1.2em;
+  }
+
+  .banner p {
+    font-size: 0.9em;
+  }
+
+  .content h2 {
+    font-size: 1.3em;
+  }
+
+  .content p {
+    font-size: 0.9em;
+  }
+}
+
+/* Medium devices (768px - 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .banner {
+    height: 300px;
+  }
+
+  .profile-photo {
+    width: 100px;
+    height: 100px;
+  }
+
+  .banner h1 {
+    font-size: 1.8em;
+  }
+
+  .banner p {
+    font-size: 1.1em;
+  }
+
+  .content h2 {
+    font-size: 1.5em;
+  }
+
+  .content p {
+    font-size: 1em;
+  }
+}
+
+/* Large devices (992px and up) */
+@media (min-width: 992px) {
+  .banner {
+    height: 400px;
+  }
+
+  .profile-photo {
+    width: 150px;
+    height: 150px;
+  }
+
+  .banner h1 {
+    font-size: 2.5em;
+  }
+
+  .banner p {
+    font-size: 1.3em;
+  }
+
+  .content h2 {
+    font-size: 1.8em;
+  }
+
+  .content p {
+    font-size: 1.1em;
+  }
 }
