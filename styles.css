@@ -7,9 +7,10 @@ body {
   padding: 0;
 }
 
+/* Remove the color styling from h1, h2 */
 h1,
 h2 {
-  color: #4CAF50;
+  margin: 0;
 }
 
 /* Banner Section */
@@ -59,6 +60,7 @@ h2 {
   max-width: 50%;
   /* Text will not exceed half of the banner's width */
   color: white;
+  /* Ensure text is white */
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
   /* Black outline for white text */
   text-align: right;
@@ -72,12 +74,16 @@ h2 {
 
 .banner h1 {
   font-size: 1.8em;
+  color: white;
+  /* Set h1 color to white */
 }
 
 .banner p {
   font-size: 1em;
   margin-top: 5px;
   /* Add some margin for spacing */
+  color: white;
+  /* Ensure p color is white */
 }
 
 /* Content Section */
@@ -90,6 +96,8 @@ h2 {
 .content h2 {
   margin-top: 30px;
   font-size: 1.5em;
+  color: #4CAF50;
+  /* You can specify a different color for content headers */
 }
 
 .content p {
