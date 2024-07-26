@@ -114,6 +114,22 @@ a:hover {
   text-decoration: underline;
 }
 
+/* Ensure section headings are centered */
+.content h2 {
+  text-align: center;
+}
+
+/* Align paragraph text to the left */
+.content p {
+  text-align: left;
+  margin: 10px 0;
+}
+
+/* Optional: Add some padding to the content for better spacing */
+.content {
+  padding: 60px 20px;
+}
+
 /* Footer */
 footer {
   text-align: center;
