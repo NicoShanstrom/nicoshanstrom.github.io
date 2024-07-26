@@ -28,9 +28,15 @@ h2 {
   position: absolute;
   bottom: 10px;
   left: 10px;
-  transform: translate(0, 0);
+  right: 10px;
+  /* Ensures content doesn't exceed the banner width */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  /* Aligns items to the start (left) */
   padding: 10px;
-  text-align: left;
+  gap: 15px;
+  /* Space between profile photo and text */
 }
 
 .profile-photo {
@@ -38,7 +44,7 @@ h2 {
   bottom: -50px;
   /* Pushes the image down */
   left: 10px;
-  /* Aligns with the left edge of the banner content */
+  /* Aligns with the left edge */
   width: 120px;
   height: 120px;
   border-radius: 50%;
@@ -48,6 +54,16 @@ h2 {
   /* Optional: Adds a background color behind the circular photo */
 }
 
+.banner-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* Align text to the left */
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  /* Black outline for white text */
+}
+
 .banner h1,
 .banner p {
   margin: 0;
@@ -55,7 +71,6 @@ h2 {
 
 .banner h1 {
   font-size: 1.8em;
-  /* Adjust font size */
 }
 
 .banner p {
