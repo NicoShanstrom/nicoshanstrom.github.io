@@ -16,7 +16,8 @@ h2 {
 .banner {
   position: relative;
   width: 100%;
-  height: 250px;
+  height: 200px;
+  /* Reduced height for less page coverage */
   background: url('assets/images/banyan_tree.jpg') no-repeat center center;
   background-size: cover;
   text-align: center;
@@ -25,28 +26,43 @@ h2 {
 
 .banner-content {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  bottom: 10px;
+  /* Positioned closer to the bottom */
+  left: 10px;
+  /* Adjusted left position for the profile photo */
+  transform: translate(0, 0);
+  /* Removed centering transform */
   padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  /* Space between profile photo and text */
 }
 
 .profile-photo {
-  width: 80px;
-  height: auto;
+  width: 120px;
+  /* Larger profile photo */
+  height: 120px;
+  /* Ensure it's square */
   border-radius: 50%;
-  border: 2px solid white;
-  margin-bottom: 10px;
+  border: 3px solid white;
+  /* Thicker border for visibility */
   object-fit: cover;
 }
 
-.banner h1 {
+.banner h1,
+.banner p {
   margin: 0;
-  font-size: 1.5em;
+  text-align: left;
+  /* Align text to the left */
+}
+
+.banner h1 {
+  font-size: 1.8em;
+  /* Adjusted font size */
 }
 
 .banner p {
-  margin: 0;
   font-size: 1em;
 }
 
@@ -88,12 +104,13 @@ footer {
 /* Small devices (up to 767px) */
 @media (max-width: 767px) {
   .banner {
-    height: 200px;
+    height: 150px;
+    /* Reduced height for small screens */
   }
 
   .profile-photo {
-    width: 60px;
-    height: auto;
+    width: 80px;
+    height: 80px;
   }
 
   .banner h1 {
@@ -116,12 +133,13 @@ footer {
 /* Medium devices (768px - 991px) */
 @media (min-width: 768px) and (max-width: 991px) {
   .banner {
-    height: 300px;
+    height: 250px;
+    /* Adjusted height for medium screens */
   }
 
   .profile-photo {
     width: 100px;
-    height: auto;
+    height: 100px;
   }
 
   .banner h1 {
@@ -144,12 +162,13 @@ footer {
 /* Large devices (992px and up) */
 @media (min-width: 992px) {
   .banner {
-    height: 400px;
+    height: 300px;
+    /* Adjusted height for large screens */
   }
 
   .profile-photo {
     width: 150px;
-    height: auto;
+    height: 150px;
   }
 
   .banner h1 {
