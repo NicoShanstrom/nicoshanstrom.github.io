@@ -40,8 +40,8 @@ body {
 .banner-content {
   position: relative;
   display: flex;
-  align-items: flex-end;
-  /* Align items to the bottom */
+  align-items: center;
+  /* Adjust to vertically center items */
   width: 100%;
   max-width: 1000px;
   /* Optional: max-width for content area */
@@ -78,6 +78,8 @@ body {
   /* Black outline for white text */
   text-align: right;
   /* Align text to the right */
+  padding-right: 10px;
+  /* Add padding for spacing from the edge */
   z-index: 3;
   /* Ensure text is above the gradient and photo */
 }
@@ -85,14 +87,15 @@ body {
 .banner h1 {
   font-size: 2.2em;
   /* Increased font size */
-  margin: 0;
+  margin: 0 0 5px 0;
+  /* Reduce bottom margin for less space between name and tagline */
 }
 
 .banner p {
   font-size: 1.2em;
   /* Increased font size */
-  margin-top: 10px;
-  /* Add some margin for spacing */
+  margin-top: 0;
+  /* Remove top margin */
 }
 
 /* Content Section */
@@ -140,17 +143,18 @@ footer {
 
   .banner-text {
     max-width: 50%;
-    /* Limit to 50% of banner width */
-    text-align: left;
-    /* Align text to the left */
-    margin-left: 0;
-    /* Reset margin for centering */
-    padding-left: 10px;
-    /* Optional: add padding for better spacing */
+    /* Ensure text does not exceed 50% of banner width */
+    text-align: right;
+    /* Align text to the right */
+    margin-left: auto;
+    padding-right: 10px;
+    /* Add padding for spacing */
   }
 
   .banner h1 {
     font-size: 1.5em;
+    margin-top: 0;
+    /* Ensure the name has space from the top */
   }
 
   .banner p {
