@@ -5,6 +5,7 @@ body {
   background-color: #f4f4f4;
   margin: 0;
   padding: 0;
+  max-width: 100%;
   overflow-x: hidden;
   /* Prevent horizontal overflow */
 }
@@ -23,7 +24,6 @@ body {
   justify-content: center;
   padding: 20px;
   overflow: hidden;
-  /* Hide overflow */
 }
 
 .banner::after {
@@ -41,7 +41,8 @@ body {
 .banner-content {
   position: relative;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
+  /* Align items to the bottom */
   justify-content: flex-end;
   width: 100%;
   max-width: 1000px;
@@ -54,16 +55,21 @@ body {
   color: white;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
   text-align: right;
+  margin-bottom: 20px;
+  /* Add margin to lower the text */
   z-index: 3;
 }
 
 .banner h1 {
   font-size: 2.2em;
   margin: 0;
+  padding-top: 20px;
+  /* Add padding to move it down */
 }
 
 .banner p {
-  font-size: 1.2em;
+  font-size: 1.1em;
+  /* Reduced font size */
   margin-top: 10px;
 }
 
@@ -90,6 +96,7 @@ body {
 /* Content Section */
 .content {
   padding: 60px 20px;
+  max-width: 100%;
 }
 
 .content h2 {
@@ -197,7 +204,7 @@ footer {
   }
 
   .banner p {
-    font-size: 1.3em;
+    font-size: 1.2em;
   }
 
   .content h2 {
