@@ -5,7 +5,8 @@ body {
   background-color: #f4f4f4;
   margin: 0;
   padding: 0;
-  position: relative;
+  overflow-x: hidden;
+  /* Prevent horizontal overflow */
 }
 
 /* Banner Section */
@@ -33,7 +34,6 @@ body {
   background: linear-gradient(to left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0) 50%);
   pointer-events: none;
   z-index: 1;
-  /* Ensure the gradient is above the background but below the text */
 }
 
 .banner-content {
@@ -44,42 +44,35 @@ body {
   width: 100%;
   max-width: 1000px;
   padding-right: 20px;
-  /* Add padding to the right side */
   z-index: 2;
-  /* Place the content above the gradient */
 }
 
 .banner-text {
   max-width: 50%;
-  /* Ensure text does not exceed 50% of the banner's width */
   color: white;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-  /* Black outline for white text */
   text-align: right;
-  /* Align text to the right */
   z-index: 3;
-  /* Ensure text is above the gradient */
 }
 
 .banner h1 {
   font-size: 2.2em;
-  /* Increased font size */
   margin: 0;
 }
 
 .banner p {
   font-size: 1.2em;
-  /* Increased font size */
   margin-top: 10px;
-  /* Add some margin for spacing */
 }
 
 /* Profile Photo */
 .profile-photo-container {
   position: absolute;
-  bottom: -40px;
-  /* Position the photo 40% out of the banner */
+  bottom: 40px;
+  /* Adjust this value to control the overlap with the banner */
   left: 20px;
+  transform: translateY(50%);
+  /* Ensure half-out positioning */
   z-index: 4;
   /* Ensure the photo is above other content */
 }
@@ -127,7 +120,7 @@ footer {
   .profile-photo-container {
     width: 80px;
     height: 80px;
-    bottom: -40px;
+    bottom: 20px;
     left: 10px;
   }
 
@@ -163,7 +156,8 @@ footer {
   .profile-photo-container {
     width: 100px;
     height: 100px;
-    bottom: -40px;
+    bottom: 40px;
+    /* Adjust this value to ensure proper overlap */
   }
 
   .banner h1 {
@@ -192,8 +186,8 @@ footer {
   .profile-photo-container {
     width: 150px;
     height: 150px;
-    bottom: -60px;
-    /* Adjusted for better positioning */
+    bottom: 60px;
+    /* Adjust this value to ensure proper overlap */
   }
 
   .banner h1 {
