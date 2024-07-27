@@ -52,7 +52,7 @@ body {
 
 .profile-photo-container {
   position: absolute;
-  bottom: -60px;
+  bottom: -50px;
   /* Ensure half in, half out positioning */
   left: 20px;
   z-index: 3;
@@ -73,11 +73,10 @@ body {
 
 .banner-text {
   margin-left: auto;
-  max-width: 45%;
-  /* Ensure text does not exceed 45% of banner width */
+  max-width: 50%;
+  /* Ensure text does not exceed 50% of banner width */
   color: white;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-  /* Black outline for white text */
   text-align: right;
   padding-right: 10px;
   z-index: 3;
@@ -85,7 +84,7 @@ body {
 }
 
 .banner h1 {
-  font-size: 2em;
+  font-size: 1.8em;
   /* Adjust font size as needed */
   margin: 0 0 5px 0;
   /* Reduce bottom margin for less space between name and tagline */
@@ -101,6 +100,10 @@ body {
 /* Content Section */
 .content {
   padding: 60px 20px;
+  max-width: 100%;
+  /* Ensure content fits within screen width */
+  overflow: hidden;
+  /* Prevent overflow */
 }
 
 .content h2 {
@@ -114,8 +117,6 @@ body {
   font-size: 1.1em;
   /* Increase paragraph size */
   margin: 10px 0;
-  max-width: 100%;
-  /* Ensure content fits within screen width */
 }
 
 /* Footer */
@@ -131,7 +132,7 @@ footer {
 /* Small devices (up to 767px) */
 @media (max-width: 767px) {
   .banner {
-    height: 210px;
+    height: 220px;
     /* Increased height for small screens */
   }
 
@@ -144,8 +145,8 @@ footer {
   }
 
   .banner-text {
-    max-width: 50%;
-    /* Ensure text does not exceed 50% of banner width */
+    max-width: 60%;
+    /* Ensure text does not exceed 60% of banner width */
     text-align: right;
     margin-left: auto;
     padding-right: 10px;
@@ -182,9 +183,9 @@ footer {
   }
 
   .profile-photo-container {
-    width: 150px;
-    height: 150px;
-    bottom: -75px;
+    width: 120px;
+    height: 120px;
+    bottom: -60px;
     /* Ensure half out positioning */
   }
 
@@ -194,11 +195,12 @@ footer {
   }
 
   .banner h1 {
-    font-size: 2em;
+    font-size: 1.8em;
+    /* Adjust font size as needed */
   }
 
   .banner p {
-    font-size: 1.1em;
+    font-size: 1em;
   }
 
   .content h2 {
@@ -213,13 +215,13 @@ footer {
 /* Large devices (992px and up) */
 @media (min-width: 992px) {
   .banner {
-    height: 400px;
+    height: 350px;
   }
 
   .profile-photo-container {
-    width: 200px;
-    height: 200px;
-    bottom: -100px;
+    width: 150px;
+    height: 150px;
+    bottom: -75px;
     /* Ensure half out positioning */
   }
 
@@ -229,11 +231,12 @@ footer {
   }
 
   .banner h1 {
-    font-size: 2.5em;
+    font-size: 2.2em;
+    /* Adjust font size as needed */
   }
 
   .banner p {
-    font-size: 1.3em;
+    font-size: 1.2em;
   }
 
   .content h2 {
