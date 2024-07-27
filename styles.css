@@ -14,7 +14,7 @@ body {
 .banner {
   position: relative;
   width: 100%;
-  height: 300px;
+  height: 250px;
   /* Adjust height as needed */
   background: url('assets/images/banyan_tree.jpg') no-repeat center center;
   background-size: cover;
@@ -52,13 +52,12 @@ body {
 
 .profile-photo-container {
   position: absolute;
-  bottom: -50px;
+  bottom: -60px;
   /* Ensure half in, half out positioning */
   left: 20px;
   z-index: 3;
   /* Ensure the photo is above the gradient and other content */
   width: 120px;
-  /* Fixed size */
   height: 120px;
   /* Fixed size to maintain aspect ratio */
 }
@@ -67,7 +66,7 @@ body {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  border: 3px solid white;
+  border: 3px solid aquamarine;
   object-fit: cover;
   /* Maintain aspect ratio */
 }
@@ -80,7 +79,7 @@ body {
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
   /* Black outline for white text */
   text-align: right;
-  padding-right: 20px;
+  padding-right: 10px;
   z-index: 3;
   /* Ensure text is above the gradient and photo */
 }
@@ -132,7 +131,7 @@ footer {
 /* Small devices (up to 767px) */
 @media (max-width: 767px) {
   .banner {
-    height: 220px;
+    height: 210px;
     /* Increased height for small screens */
   }
 
@@ -145,8 +144,8 @@ footer {
   }
 
   .banner-text {
-    max-width: 60%;
-    /* Ensure text does not exceed 60% of banner width */
+    max-width: 50%;
+    /* Ensure text does not exceed 50% of banner width */
     text-align: right;
     margin-left: auto;
     padding-right: 10px;
@@ -179,7 +178,7 @@ footer {
 /* Medium devices (768px - 991px) */
 @media (min-width: 768px) and (max-width: 991px) {
   .banner {
-    height: 300px;
+    height: 280px;
   }
 
   .profile-photo-container {
