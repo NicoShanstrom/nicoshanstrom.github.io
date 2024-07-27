@@ -139,11 +139,14 @@ footer {
   }
 
   .banner-text {
-    max-width: 100%;
-    text-align: center;
-    /* Center text for better mobile presentation */
+    max-width: 50%;
+    /* Limit to 50% of banner width */
+    text-align: left;
+    /* Align text to the left */
     margin-left: 0;
     /* Reset margin for centering */
+    padding-left: 10px;
+    /* Optional: add padding for better spacing */
   }
 
   .banner h1 {
