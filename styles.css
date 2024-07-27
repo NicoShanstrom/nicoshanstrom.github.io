@@ -5,6 +5,10 @@ body {
   background-color: #f4f4f4;
   margin: 0;
   padding: 0;
+  max-width: 100%;
+  /* Prevent horizontal scrolling */
+  overflow-x: hidden;
+  /* Prevent horizontal overflow */
 }
 
 /* Banner Section */
@@ -20,8 +24,8 @@ body {
   align-items: center;
   justify-content: center;
   padding: 20px;
-  overflow: visible;
-  /* Allow overflow for elements like the profile photo */
+  overflow: hidden;
+  /* Prevent overflow */
 }
 
 .banner::after {
@@ -47,11 +51,13 @@ body {
   /* Optional: max-width for content area */
   z-index: 2;
   /* Place the content above the gradient */
+  padding-top: 20px;
+  /* Add padding to lower the text */
 }
 
 .profile-photo-container {
   position: absolute;
-  bottom: -60px;
+  bottom: -75px;
   /* Position the photo half out of the banner */
   left: 20px;
   /* Align to the left side */
@@ -60,8 +66,8 @@ body {
 }
 
 .profile-photo {
-  width: 120px;
-  height: 120px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   border: 3px solid white;
   object-fit: cover;
@@ -86,14 +92,14 @@ body {
 
 .banner h1 {
   font-size: 2.2em;
-  /* Increased font size */
+  /* Adjust font size as needed */
   margin: 0 0 5px 0;
   /* Reduce bottom margin for less space between name and tagline */
 }
 
 .banner p {
   font-size: 1.2em;
-  /* Increased font size */
+  /* Adjust font size as needed */
   margin-top: 0;
   /* Remove top margin */
 }
@@ -114,6 +120,8 @@ body {
   font-size: 1.1em;
   /* Increase paragraph size */
   margin: 10px 0;
+  max-width: 100%;
+  /* Ensure content fits within screen width */
 }
 
 /* Footer */
@@ -129,8 +137,8 @@ footer {
 /* Small devices (up to 767px) */
 @media (max-width: 767px) {
   .banner {
-    height: 150px;
-    /* Reduced height for small screens */
+    height: 180px;
+    /* Increased height for small screens */
   }
 
   .profile-photo-container {
@@ -149,16 +157,20 @@ footer {
     margin-left: auto;
     padding-right: 10px;
     /* Add padding for spacing */
+    padding-top: 20px;
+    /* Lower the text */
   }
 
   .banner h1 {
-    font-size: 1.5em;
-    margin-top: 0;
-    /* Ensure the name has space from the top */
+    font-size: 1.4em;
+    /* Adjust font size as needed */
+    margin-top: 5px;
+    /* Add space from the top */
   }
 
   .banner p {
     font-size: 1em;
+    /* Adjust font size as needed */
   }
 
   .content h2 {
@@ -173,13 +185,20 @@ footer {
 /* Medium devices (768px - 991px) */
 @media (min-width: 768px) and (max-width: 991px) {
   .banner {
-    height: 250px;
+    height: 300px;
   }
 
   .profile-photo-container {
-    width: 100px;
-    height: 100px;
-    bottom: -50px;
+    width: 120px;
+    height: 120px;
+    bottom: -60px;
+    /* Ensure half out positioning */
+  }
+
+  .profile-photo {
+    width: 100%;
+    /* Ensure the photo container scales properly */
+    height: auto;
   }
 
   .banner h1 {
@@ -202,13 +221,20 @@ footer {
 /* Large devices (992px and up) */
 @media (min-width: 992px) {
   .banner {
-    height: 300px;
+    height: 400px;
   }
 
   .profile-photo-container {
     width: 150px;
     height: 150px;
     bottom: -75px;
+    /* Ensure half out positioning */
+  }
+
+  .profile-photo {
+    width: 100%;
+    /* Ensure the photo container scales properly */
+    height: auto;
   }
 
   .banner h1 {
