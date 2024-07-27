@@ -31,6 +31,8 @@ body {
   left: 0;
   background: linear-gradient(to left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0) 50%);
   pointer-events: none;
+  z-index: 1;
+  /* Ensure the gradient is above the background but below the text */
 }
 
 .banner-content {
@@ -43,6 +45,8 @@ body {
   max-width: 1000px;
   /* Optional: max-width for content area */
   justify-content: space-between;
+  z-index: 2;
+  /* Place the content above the gradient */
 }
 
 .profile-photo-container {
