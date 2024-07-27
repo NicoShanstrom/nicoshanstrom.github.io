@@ -11,7 +11,7 @@ body {
 .banner {
   position: relative;
   width: 100%;
-  height: 200px;
+  height: 250px;
   /* Adjust height as needed */
   background: url('assets/images/banyan_tree.jpg') no-repeat center center;
   background-size: cover;
@@ -53,14 +53,11 @@ body {
   position: relative;
   width: 120px;
   /* Fixed width for profile photo container */
+  margin-bottom: -60px;
+  /* Adjust to control overlap amount */
 }
 
 .profile-photo {
-  position: absolute;
-  bottom: -50px;
-  /* Pushes the image down */
-  left: 0;
-  /* Aligns with the left edge of the container */
   width: 120px;
   height: 120px;
   border-radius: 50%;
@@ -133,11 +130,15 @@ footer {
     /* Reduced height for small screens */
   }
 
+  .profile-photo-container {
+    width: 80px;
+    margin-bottom: -40px;
+    /* Adjust position for smaller screens */
+  }
+
   .profile-photo {
     width: 80px;
     height: 80px;
-    bottom: -40px;
-    /* Adjust position for smaller screens */
   }
 
   .banner h1 {
@@ -165,12 +166,12 @@ footer {
 
   .profile-photo-container {
     width: 100px;
+    margin-bottom: -50px;
   }
 
   .profile-photo {
     width: 100px;
     height: 100px;
-    bottom: -50px;
   }
 
   .banner h1 {
@@ -198,12 +199,12 @@ footer {
 
   .profile-photo-container {
     width: 150px;
+    margin-bottom: -75px;
   }
 
   .profile-photo {
     width: 150px;
     height: 150px;
-    bottom: -75px;
   }
 
   .banner h1 {
