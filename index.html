@@ -52,18 +52,28 @@
     <p>If you've read this far, thank you! I hope you enjoyed my story.</p>
 
     <h2>My Work</h2>
-    <p>Here are some projects I am working on at the moment:</p>
+    <p>Here are some projects I have worked on:</p>
     <p>An update to the <a href="https://github.com/NicoShanstrom/1000_hours_outside" target="_blank">1000 Hours
       Outside</a> application. My wife was using the other 1000 hours outside challenge to track outdoor time for our
       child because the average American child gets only 4-7 minutes of unstructured outdoor time each day, and that is
       unacceptable. I wanted to track statistics such as total time, daily average, required average per day to reach
-      1000 hours, the pace needed to achieve this goal, and detailed session tracking. The project is still in process and needs to be fully tested.</p>
+      1000 hours, the pace needed to achieve this goal, and detailed session tracking. The project is still in process and needs to be fully tested, as of July 2024, and is not deployed.
+    </p>
     <p>A web app using the 50/30/20 rule of budgeting called <a href="https://fruga-fe.onrender.com/" target="_blank">Fruga</a>. 
       A user enters their gross income, lists their needs, wants, and savings. The application adds them to a pie chart for visualization. When the user clicks get advice, their data is
       sent to the python microservice if it does not match the 50/30/20 rule, which calls OpenAI api to generate an advice response which then gets sent to the rails backend as advice, 
       all of the users income, needs, wants, savings, and advice is then sent to the front end in a json response. This was a cross functional team, but my technical contributions were on the backend and microservice, 
-      which was also a lot of configuratin for a new language and CI/CD setup.
+      which was also a lot of configuration for a new language and CI/CD setup. The project is still in progress as of end of July 2024.
     </p>
+    <p>An api only ruby on rails application called <a href="https://github.com/NicoShanstrom/nico_lunch_n_learn"
+        target="_blank">nico_lunch_n_learn</a>. This application exposes a RESTful API that aggregates data from multiple external RESTful APIs
+        for a user/front end application to find recipes and learning resources from any country, if no country is selected, a random country will generate.
+        I used TDD to ensure code reliability and functionality. Utilized poros for data preparation making it ready for use in
+        serializer which then format JSON responses. I tried to keep controllers as simple as possible. Implemented Basic User
+        Authentication. Handled errors gracefully and provide meaningful error messages. Tests both API consumption and exposure, making
+        use of VCR gem for mocking API responses in tests.
+    </p>
+
 
 
     <a href="assets/files/nico_resume_724.pdf" download>Download My Resume (PDF)</a>
