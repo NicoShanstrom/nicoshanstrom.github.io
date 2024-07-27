@@ -2,7 +2,7 @@
 body {
   font-family: Arial, sans-serif;
   color: #333;
-  background-color: #f4f4f4;
+  background-color: #f9ffea6d;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -31,7 +31,7 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  background: linear-gradient(to left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0) 50%);
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.7), rgba(2, 42, 14, 0.392) 50%);
   pointer-events: none;
   z-index: 1;
 }
@@ -104,8 +104,8 @@ body {
 /* Footer */
 footer {
   text-align: center;
-  padding: 20px;
-  background-color: #333;
+  padding: 0px;
+  background-color: #003535;
   color: white;
 }
 
@@ -114,28 +114,29 @@ footer {
 /* Small devices (up to 767px) */
 @media (max-width: 767px) {
   .banner {
-    height: 150px;
+    height: 175px;
   }
 
   .profile-photo-container {
     width: 80px;
     height: 80px;
     bottom: 20px;
-    left: 10px;
+    left: 15px;
   }
 
   .banner-text {
-    max-width: 90%;
-    text-align: center;
-    margin-left: auto;
+    max-width: 47%;
+    text-align: right;
+    margin-left: auto; /* Ensure the text container is aligned correctly within the parent */
+    padding-right: 10px; /* Optional: Adds space between the text and the right edge */
   }
 
   .banner h1 {
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
 
   .banner p {
-    font-size: 1em;
+    font-size: 7em;
   }
 
   .content h2 {
@@ -165,7 +166,7 @@ footer {
   }
 
   .banner p {
-    font-size: 1.1em;
+    font-size: 1.0em;
   }
 
   .content h2 {
