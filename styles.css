@@ -18,7 +18,7 @@ body {
   color: white;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   padding: 20px;
   overflow: visible;
   /* Allow overflow for elements like the profile photo */
@@ -42,11 +42,9 @@ body {
   display: flex;
   align-items: flex-end;
   /* Align items to the bottom */
-  padding: 0 20px;
   width: 100%;
   max-width: 1000px;
   /* Optional: max-width for content area */
-  justify-content: space-between;
   z-index: 2;
   /* Place the content above the gradient */
 }
@@ -54,28 +52,24 @@ body {
 .profile-photo-container {
   position: absolute;
   bottom: -60px;
-  /* Push the photo half-way out of the banner */
+  /* Position the photo half out of the banner */
   left: 20px;
   /* Align to the left side */
-  width: 120px;
-  /* Fixed width for profile photo container */
-  height: 120px;
-  /* Fixed height */
-  z-index: 2;
-  /* Ensure the photo is above the gradient */
+  z-index: 3;
+  /* Ensure the photo is above the gradient and other content */
 }
 
 .profile-photo {
-  width: 100%;
-  height: 100%;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   border: 3px solid white;
   object-fit: cover;
-  background-color: white;
-  /* Optional: Adds a background color behind the circular photo */
 }
 
 .banner-text {
+  margin-left: auto;
+  /* Push the text to the right side */
   max-width: 50%;
   /* Text will not exceed half of the banner's width */
   color: white;
@@ -92,8 +86,6 @@ body {
   font-size: 2.2em;
   /* Increased font size */
   margin: 0;
-  color: white;
-  /* Set h1 color to white */
 }
 
 .banner p {
@@ -101,8 +93,6 @@ body {
   /* Increased font size */
   margin-top: 10px;
   /* Add some margin for spacing */
-  color: white;
-  /* Ensure p color is white */
 }
 
 /* Content Section */
@@ -143,16 +133,17 @@ footer {
   .profile-photo-container {
     width: 80px;
     height: 80px;
-    bottom: -50px;
+    bottom: -40px;
     /* Adjust position for smaller screens */
     left: 10px;
-    /* Adjust position for smaller screens */
   }
 
   .banner-text {
-    max-width: 60%;
+    max-width: 100%;
     text-align: center;
     /* Center text for better mobile presentation */
+    margin-left: 0;
+    /* Reset margin for centering */
   }
 
   .banner h1 {
@@ -182,7 +173,6 @@ footer {
     width: 100px;
     height: 100px;
     bottom: -50px;
-    left: 15px;
   }
 
   .banner h1 {
@@ -211,7 +201,7 @@ footer {
   .profile-photo-container {
     width: 150px;
     height: 150px;
-    bottom: -50px;
+    bottom: -75px;
   }
 
   .banner h1 {
