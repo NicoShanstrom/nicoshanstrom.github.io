@@ -7,12 +7,6 @@ body {
   padding: 0;
 }
 
-/* Remove the color styling from h1, h2 */
-h1,
-h2 {
-  margin: 0;
-}
-
 /* Banner Section */
 .banner {
   position: relative;
@@ -22,17 +16,33 @@ h2 {
   background: url('assets/images/banyan_tree.jpg') no-repeat center center;
   background-size: cover;
   color: white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+}
+
+.banner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0) 50%);
+  pointer-events: none;
 }
 
 .banner-content {
   position: relative;
-  height: 100%;
   display: flex;
   align-items: flex-end;
   /* Align items to the bottom */
-  padding: 0 20px 20px;
+  padding: 0 20px;
+  width: 100%;
+  max-width: 1000px;
+  /* Optional: max-width for content area */
   justify-content: space-between;
-  /* Space between photo and text */
 }
 
 .profile-photo-container {
@@ -67,20 +77,18 @@ h2 {
   /* Align text to the right */
 }
 
-.banner h1,
-.banner p {
-  margin: 0;
-}
-
 .banner h1 {
-  font-size: 1.8em;
+  font-size: 2.2em;
+  /* Increased font size */
+  margin: 0;
   color: white;
   /* Set h1 color to white */
 }
 
 .banner p {
-  font-size: 1em;
-  margin-top: 5px;
+  font-size: 1.2em;
+  /* Increased font size */
+  margin-top: 10px;
   /* Add some margin for spacing */
   color: white;
   /* Ensure p color is white */
@@ -88,46 +96,20 @@ h2 {
 
 /* Content Section */
 .content {
-  padding: 60px 20px 20px;
-  /* Added top padding to accommodate the profile photo */
-  text-align: center;
+  padding: 60px 20px;
 }
 
 .content h2 {
-  margin-top: 30px;
-  font-size: 1.5em;
-  color: #4CAF50;
-  /* You can specify a different color for content headers */
-}
-
-.content p {
-  font-size: 1em;
-  margin: 10px 0;
-}
-
-a {
-  color: #007BFF;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* Ensure section headings are centered */
-.content h2 {
   text-align: center;
+  font-size: 2em;
+  /* Increase heading size */
 }
 
-/* Align paragraph text to the left */
 .content p {
   text-align: left;
+  font-size: 1.1em;
+  /* Increase paragraph size */
   margin: 10px 0;
-}
-
-/* Optional: Add some padding to the content for better spacing */
-.content {
-  padding: 60px 20px;
 }
 
 /* Footer */
@@ -154,30 +136,20 @@ footer {
     /* Adjust position for smaller screens */
   }
 
-  .banner-content {
-    padding: 0 10px 10px;
-    /* Adjust padding for small screens */
-  }
-
   .banner h1 {
-    font-size: 1.2em;
+    font-size: 1.5em;
   }
 
   .banner p {
-    font-size: 0.9em;
-  }
-
-  .content {
-    padding-top: 50px;
-    /* Adjust padding for small screens */
+    font-size: 1em;
   }
 
   .content h2 {
-    font-size: 1.3em;
+    font-size: 1.5em;
   }
 
   .content p {
-    font-size: 0.9em;
+    font-size: 1em;
   }
 }
 
@@ -198,23 +170,19 @@ footer {
   }
 
   .banner h1 {
-    font-size: 1.8em;
+    font-size: 2em;
   }
 
   .banner p {
     font-size: 1.1em;
   }
 
-  .content {
-    padding-top: 60px;
-  }
-
   .content h2 {
-    font-size: 1.5em;
+    font-size: 1.8em;
   }
 
   .content p {
-    font-size: 1em;
+    font-size: 1.1em;
   }
 }
 
@@ -242,15 +210,11 @@ footer {
     font-size: 1.3em;
   }
 
-  .content {
-    padding-top: 80px;
-  }
-
   .content h2 {
-    font-size: 1.8em;
+    font-size: 2em;
   }
 
   .content p {
-    font-size: 1.1em;
+    font-size: 1.2em;
   }
 }
