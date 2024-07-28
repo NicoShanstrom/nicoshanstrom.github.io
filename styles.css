@@ -2,7 +2,7 @@
 body {
   font-family: Arial, sans-serif;
   color: #333;
-  background-color: #f9ffea6d;
+  background-color: #f9ffeadb;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -71,6 +71,7 @@ body {
   bottom: -75px;
   /* Ensure half-out positioning */
   left: 20px;
+  transform: translateY(50%);
   z-index: 4;
   /* Ensure the photo is above other content */
 }
@@ -118,7 +119,8 @@ footer {
   .profile-photo-container {
     width: 80px;
     height: 80px;
-    bottom: 20px;
+    bottom: -40px;
+    /* Ensure half-out positioning */
     left: 15px;
   }
 
