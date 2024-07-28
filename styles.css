@@ -1,8 +1,8 @@
 /* General Styles */
 body {
   font-family: Arial, sans-serif;
-  color: #fff8bf;
-  background-color: #000000;
+  color: #000000;
+  background-color: #fff8bf;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -70,7 +70,8 @@ body {
   position: absolute;
   bottom: -60px;
   /* Adjust this value to control the overlap with the banner */
-  left: 20px;
+  left: 25px;
+  /* Add left padding */
   z-index: 4;
   /* Ensure the photo is above other content */
 }
@@ -85,7 +86,8 @@ body {
 
 /* Content Section */
 .content {
-  padding: 60px 20px;
+  padding: 60px 30px;
+  /* Add padding on both sides for the content */
 }
 
 .content h2 {
@@ -160,6 +162,8 @@ footer {
     height: 100px;
     bottom: -50px;
     /* Ensure half-out positioning */
+    left: 25px;
+    /* Add left padding */
   }
 
   .banner h1 {
@@ -190,6 +194,8 @@ footer {
     height: 150px;
     bottom: -75px;
     /* Ensure half-out positioning */
+    left: 25px;
+    /* Add left padding */
   }
 
   .banner h1 {
