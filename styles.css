@@ -68,11 +68,9 @@ body {
 /* Profile Photo */
 .profile-photo-container {
   position: absolute;
-  bottom: 40px;
-  /* Adjust this value to control the overlap with the banner */
-  left: 20px;
-  transform: translateY(50%);
+  bottom: -75px;
   /* Ensure half-out positioning */
+  left: 20px;
   z-index: 4;
   /* Ensure the photo is above other content */
 }
@@ -127,8 +125,8 @@ footer {
   .banner-text {
     max-width: 47%;
     text-align: right;
-    margin-left: auto; /* Ensure the text container is aligned correctly within the parent */
-    padding-right: 10px; /* Optional: Adds space between the text and the right edge */
+    margin-left: auto;
+    padding-right: 10px;
   }
 
   .banner h1 {
@@ -157,8 +155,14 @@ footer {
   .profile-photo-container {
     width: 100px;
     height: 100px;
-    bottom: 40px;
-    /* Adjust this value to ensure proper overlap */
+    bottom: -50px;
+    /* Ensure half-out positioning */
+  }
+
+  .banner-text {
+    max-width: 50%;
+    padding-right: 20px;
+    /* Add padding to the right */
   }
 
   .banner h1 {
@@ -166,7 +170,7 @@ footer {
   }
 
   .banner p {
-    font-size: 1.0em;
+    font-size: 1em;
   }
 
   .content h2 {
@@ -181,14 +185,20 @@ footer {
 /* Large devices (992px and up) */
 @media (min-width: 992px) {
   .banner {
-    height: 300px;
+    height: 350px;
   }
 
   .profile-photo-container {
     width: 150px;
     height: 150px;
-    bottom: 60px;
-    /* Adjust this value to ensure proper overlap */
+    bottom: -75px;
+    /* Ensure half-out positioning */
+  }
+
+  .banner-text {
+    max-width: 50%;
+    padding-right: 30px;
+    /* Add more padding to the right */
   }
 
   .banner h1 {
