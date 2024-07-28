@@ -1,8 +1,8 @@
 /* General Styles */
 body {
   font-family: Arial, sans-serif;
-  color: #333;
-  background-color: #f9ffeadb;
+  color: #fff8bf;
+  background-color: #000000;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -68,10 +68,9 @@ body {
 /* Profile Photo */
 .profile-photo-container {
   position: absolute;
-  bottom: -75px;
-  /* Ensure half-out positioning */
+  bottom: -60px;
+  /* Adjust this value to control the overlap with the banner */
   left: 20px;
-  transform: translateY(50%);
   z-index: 4;
   /* Ensure the photo is above other content */
 }
@@ -128,7 +127,9 @@ footer {
     max-width: 47%;
     text-align: right;
     margin-left: auto;
+    /* Ensure the text container is aligned correctly within the parent */
     padding-right: 10px;
+    /* Optional: Adds space between the text and the right edge */
   }
 
   .banner h1 {
@@ -161,12 +162,6 @@ footer {
     /* Ensure half-out positioning */
   }
 
-  .banner-text {
-    max-width: 50%;
-    padding-right: 20px;
-    /* Add padding to the right */
-  }
-
   .banner h1 {
     font-size: 2em;
   }
@@ -195,12 +190,6 @@ footer {
     height: 150px;
     bottom: -75px;
     /* Ensure half-out positioning */
-  }
-
-  .banner-text {
-    max-width: 50%;
-    padding-right: 30px;
-    /* Add more padding to the right */
   }
 
   .banner h1 {
