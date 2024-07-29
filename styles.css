@@ -21,7 +21,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  padding: 12px;
 }
 
 .banner::after {
@@ -31,7 +31,7 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  background: linear-gradient(to left, rgba(0, 0, 0, 0.7), rgba(2, 42, 14, 0.392) 50%);
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.85) 10%, rgba(0, 0, 0, 0) 100%);
   pointer-events: none;
   z-index: 1;
 }
@@ -66,14 +66,22 @@ body {
 }
 
 /* Profile Photo */
-.profile-photo-container {
+.profile-photo-container,
+.profile-photo-container-right {
   position: absolute;
   bottom: -60px;
-  /* Adjust this value to control the overlap with the banner */
-  left: 50px;
-  /* Add left padding */
+  /* Ensure half-out positioning */
   z-index: 4;
   /* Ensure the photo is above other content */
+}
+
+.profile-photo-container {
+  left: 70px;
+  /* Increase left padding */
+}
+
+.profile-photo-container-right {
+  right: 70px;
 }
 
 .profile-photo {
@@ -86,7 +94,7 @@ body {
 
 /* Content Section */
 .content {
-  padding: 120px 60px;
+  padding: 40px 70px;
   /* Add padding on both sides for the content */
 }
 
@@ -117,12 +125,21 @@ footer {
     height: 175px;
   }
 
-  .profile-photo-container {
+  .profile-photo-container,
+  .profile-photo-container-right {
     width: 80px;
     height: 80px;
-    bottom: -40px;
+    bottom: -20px;
     /* Ensure half-out positioning */
-    left: 25px;
+  }
+
+  .profile-photo-container {
+    left: 75px;
+    /* Increase left padding */
+  }
+
+  .profile-photo-container-right {
+    right: 150px;
   }
 
   .banner-text {
@@ -132,6 +149,8 @@ footer {
     /* Ensure the text container is aligned correctly within the parent */
     padding-right: 10px;
     /* Optional: Adds space between the text and the right edge */
+    margin-bottom: 45px;
+      /* Add this line to create space below the text */
   }
 
   .banner h1 {
@@ -139,7 +158,7 @@ footer {
   }
 
   .banner p {
-    font-size: .7em;
+    font-size: .8em;
   }
 
   .content h2 {
@@ -157,13 +176,21 @@ footer {
     height: 250px;
   }
 
-  .profile-photo-container {
-    width: 100px;
-    height: 100px;
-    bottom: -50px;
+  .profile-photo-container,
+  .profile-photo-container-right {
+    width: 150px;
+    height: 150px;
+    bottom: -90px;
     /* Ensure half-out positioning */
-    left: 25px;
-    /* Add left padding */
+  }
+
+  .profile-photo-container {
+    left: 100px;
+    /* Increase left padding */
+  }
+
+  .profile-photo-container-right {
+    right: 100px;
   }
 
   .banner h1 {
@@ -189,13 +216,21 @@ footer {
     height: 350px;
   }
 
-  .profile-photo-container {
-    width: 150px;
-    height: 150px;
-    bottom: -75px;
+  .profile-photo-container,
+  .profile-photo-container-right {
+    width: 300px;
+    height: 300px;
+    bottom: -240px;
     /* Ensure half-out positioning */
-    left: 25px;
-    /* Add left padding */
+  }
+
+  .profile-photo-container {
+    left: 150px;
+    /* Increase left padding */
+  }
+
+  .profile-photo-container-right {
+    right: 10px;
   }
 
   .banner h1 {
