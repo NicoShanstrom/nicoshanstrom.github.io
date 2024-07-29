@@ -81,7 +81,7 @@ body {
 }
 
 .profile-photo-container-right {
-  right: 25px;
+  right: 70px;
 }
 
 .profile-photo {
@@ -94,7 +94,7 @@ body {
 
 /* Content Section */
 .content {
-  padding: 90px 60px;
+  padding: 40px 70px;
   /* Add padding on both sides for the content */
 }
 
@@ -134,12 +134,12 @@ footer {
   }
 
   .profile-photo-container {
-    left: 90px;
+    left: 75px;
     /* Increase left padding */
   }
 
   .profile-photo-container-right {
-    right: 90px;
+    right: 150px;
   }
 
   .banner-text {
