@@ -148,8 +148,8 @@ footer {
     margin-left: auto;
     /* Ensure the text container is aligned correctly within the parent */
     padding-right: 12px;
-    padding-top: 24px;
-    padding-bottom: 64px;
+    padding-top: 30px;
+    padding-bottom: 65px;
     
       /* Add this line to create space below the text */
   }
