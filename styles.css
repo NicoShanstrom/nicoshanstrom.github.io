@@ -11,8 +11,11 @@ body {
 
 /* Banner Section */
 .banner {
-  position: relative;
-  width: 100%;
+  position: fixed;
+  /* Make the banner fixed */
+  top: 0;
+  left: 0;
+  right: 0;
   height: 300px;
   /* Adjust height as needed */
   background: url('assets/images/banyan_tree.jpg') no-repeat center center;
@@ -22,6 +25,8 @@ body {
   align-items: center;
   justify-content: center;
   padding: 12px;
+  z-index: 5;
+  /* Ensure banner is above other content */
 }
 
 .banner::after {
@@ -65,13 +70,31 @@ body {
   margin-top: 10px;
 }
 
+/* Spacer Section */
+.spacer {
+  position: fixed;
+  /* Fix the position of the spacer */
+  top: 300px;
+  /* Position it right below the banner */
+  left: 0;
+  right: 0;
+  height: 150px;
+  /* Adjust this height as needed */
+  background-color: #fff8bf;
+  /* Match the background color of the body */
+  
+  z-index: 4;
+  /* Ensure it's below the profile photos */
+}
+
 /* Profile Photo */
 .profile-photo-container,
 .profile-photo-container-right {
   position: absolute;
+  /* Make profile photos fixed */
   bottom: -60px;
   /* Ensure half-out positioning */
-  z-index: 4;
+  z-index: 6;
   /* Ensure the photo is above other content */
 }
 
@@ -94,6 +117,8 @@ body {
 
 /* Content Section */
 .content {
+  margin-top: 10px;
+  /* Adjust this value to match the height of the banner */
   padding: 50px 70px;
   /* Add padding on both sides for the content */
 }
@@ -125,17 +150,29 @@ footer {
     height: 175px;
   }
 
+  .spacer {
+    position: fixed;
+    /* Fix the position of the spacer */
+    top: 175px;
+    /* Position it right below the banner */
+    left: 0;
+    right: 0;
+    height: 94px;
+    /* Adjust this height to match the height of the profile photos */
+    background-color: #fff8bf;
+    z-index: 4;
+    /* Ensure it's below the profile photos */
+  }
   .profile-photo-container,
   .profile-photo-container-right {
-    width: 70px;
-    height: 70px;
-    bottom: -20px;
+    width: 45px;
+    height: 45px;
+    bottom: 17px;
     /* Ensure half-out positioning */
   }
 
   .profile-photo-container {
     left: 30px;
-    /* Increase left padding */
   }
 
   .profile-photo-container-right {
@@ -146,12 +183,9 @@ footer {
     max-width: 48%;
     text-align: right;
     margin-left: auto;
-    /* Ensure the text container is aligned correctly within the parent */
     padding-right: 12px;
     padding-top: 30px;
-    padding-bottom: 65px;
-    
-      /* Add this line to create space below the text */
+    padding-bottom: 70px;
   }
 
   .banner h1 {
@@ -160,6 +194,12 @@ footer {
 
   .banner p {
     font-size: .7em;
+  }
+
+  .content {
+    margin-top: 47px;
+      /* Adjust this value to position the content below the spacer and profile photos */
+    padding: 200px 20px 50px;
   }
 
   .content h2 {
@@ -174,20 +214,33 @@ footer {
 /* Medium devices (768px - 991px) */
 @media (min-width: 768px) and (max-width: 991px) {
   .banner {
-    height: 250px;
+    height: 225px;
+  }
+
+  .spacer {
+    position: fixed;
+    /* Fix the position of the spacer */
+    top: 225px;
+    /* Position it right below the banner */
+    left: 0;
+    right: 0;
+    height: 100px;
+    /* Adjust this height to match the height of the profile photos */
+    background-color: #fff8bf;
+    z-index: 4;
+    /* Ensure it's below the profile photos */
   }
 
   .profile-photo-container,
   .profile-photo-container-right {
     width: 175px;
     height: 175px;
-    bottom: -120px;
-    /* Ensure half-out positioning */
+    bottom: -115px;
+    /* Adjust bottom value for correct positioning */
   }
 
   .profile-photo-container {
-    left: 100px;
-    /* Increase left padding */
+    left: 120px;
   }
 
   .profile-photo-container-right {
@@ -198,19 +251,24 @@ footer {
     max-width: 48%;
     text-align: right;
     margin-left: auto;
-    /* Ensure the text container is aligned correctly within the parent */
     padding-right: 20px;
     padding-top: 25px;
-    padding-bottom: 50px;
-
-    /* Add this line to create space below the text */
+    padding-bottom: 60px;
   }
+
   .banner h1 {
     font-size: 2em;
   }
 
   .banner p {
     font-size: 1em;
+  }
+
+  .content {
+    margin-top: 280px;
+      /* Adjust this value to match the combined height of the banner and spacer */
+    padding: 20px 20px 50px;
+      /* Adjust padding as needed */
   }
 
   .content h2 {
@@ -225,20 +283,33 @@ footer {
 /* Large devices (992px and up) */
 @media (min-width: 992px) {
   .banner {
-    height: 350px;
+    height: 275px;
+  }
+
+  .spacer {
+    position: fixed;
+    /* Fix the position of the spacer */
+    top: 275px;
+    /* Position it right below the banner */
+    left: 0;
+    right: 0;
+    height: 100px;
+    /* Adjust this height to match the height of the profile photos */
+    background-color: #fff8bf;
+    z-index: 4;
+    /* Ensure it's below the profile photos */
   }
 
   .profile-photo-container,
   .profile-photo-container-right {
     width: 300px;
     height: 300px;
-    bottom: -250px;
-    /* Ensure half-out positioning */
+    bottom: -240px;
+    /* Adjust bottom value for correct positioning */
   }
 
   .profile-photo-container {
     left: 150px;
-    /* Increase left padding */
   }
 
   .profile-photo-container-right {
@@ -249,12 +320,9 @@ footer {
     max-width: 48%;
     text-align: right;
     margin-left: auto;
-    /* Ensure the text container is aligned correctly within the parent */
     padding-right: 0px;
     padding-top: 40px;
-    padding-bottom: 30px;
-
-    /* Add this line to create space below the text */
+    padding-bottom: 40px;
   }
 
   .banner h1 {
@@ -263,6 +331,12 @@ footer {
 
   .banner p {
     font-size: 1.3em;
+  }
+
+  .content {
+    margin-top: px;
+      /* Adjust this value to match the combined height of the banner and spacer */
+    padding: 335px 20px 50px;
   }
 
   .content h2 {
