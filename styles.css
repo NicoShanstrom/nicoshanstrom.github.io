@@ -146,17 +146,17 @@ footer {
 /* Mobile devices (360px - 414px width) */
 @media (min-width: 360px) and (max-width: 414px) {
   .banner {
-    height: 125px;
+    height: 150px;
   }
 
   .spacer {
     position: fixed;
     /* Fix the position of the spacer */
-    top: 125px;
+    top: 150px;
     /* Position it right below the banner */
     left: 0;
     right: 0;
-    height: 72px;
+    height: 80px;
     /* Adjust this height to match the height of the profile photos */
     background-color: #fff8bf;
     z-index: 4;
@@ -164,8 +164,8 @@ footer {
   }
 
   .profile-photo {
-    width: 80px;
-    height: 80px;
+    width: 85px;
+    height: 85px;
     border-radius: 50%;
     border: 2px solid rgb(226, 236, 255);
     object-fit: cover;
@@ -190,21 +190,21 @@ footer {
   .banner-text {
     max-width: 75%;
     text-align: right;
-    padding-top: 50px;
-    padding-bottom: 80px;
+    padding-top: 75px;
+    padding-bottom: 82px;
   }
 
   .banner h1 {
-    font-size: 1.1em;
+    font-size: 1.11em;
   }
 
   .banner p {
-    font-size: 0.675em;
+    font-size: 0.72em;
   }
 
   .content {
     /* Adjust this value to position the content below the spacer and profile photos */
-    padding: 170px 20px 50px;
+    padding: 202px 20px 50px;
   }
 
   .content h2 {
@@ -287,79 +287,6 @@ footer {
   }
 }
 
-/* Landscape Small Phones (up to 500px height) */
-@media (max-height: 500px) and (orientation: landscape) {
-  .banner {
-    height: 75px;
-    /* Adjust height for landscape on small phones */
-  }
-
-  .spacer {
-    position: fixed;
-    top: 75px;
-    /* Position it right below the banner */
-    left: 0;
-    right: 0;
-    height: 60px;
-    /* Adjust this height to match the height of the profile photos */
-    background-color: #fff8bf;
-    z-index: 4;
-    /* Ensure it's below the profile photos */
-  }
-
-  .profile-photo {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    border: 1px solid rgb(226, 236, 255);
-    object-fit: cover;
-  }
-
-  .profile-photo-container,
-  .profile-photo-container-right {
-    width: 50px;
-    height: 50px;
-    bottom: -25px;
-    /* Ensure half-out positioning */
-  }
-
-  .profile-photo-container {
-    left: 20px;
-  }
-
-  .profile-photo-container-right {
-    right: 20px;
-  }
-
-  .banner-text {
-    max-width: 45%;
-    text-align: right;
-    padding-top: 20px;
-    padding-bottom: 30px;
-  }
-
-  .banner h1 {
-    font-size: 1em;
-  }
-
-  .banner p {
-    font-size: .6em;
-  }
-
-  .content {
-    margin-top: 40px;
-    /* Adjust this value to position the content below the spacer and profile photos */
-    padding: 100px 15px 40px;
-  }
-
-  .content h2 {
-    font-size: 1.5em;
-  }
-
-  .content p {
-    font-size: 1em;
-  }
-}
 /* Tablets (601px - 962px width) */
 @media (min-width: 601px) and (max-width: 962px) {
   .banner {
