@@ -8,7 +8,42 @@ body {
   overflow-x: hidden;
   /* Prevent horizontal overflow */
 }
+/* General link styles */
+a {
+  color: white;
+  text-decoration: none;
+  /* Removes the underline */
+}
 
+a:hover,
+a:focus,
+a:active {
+  color: white;
+  /* Keeps the color white on hover, focus, and active states */
+  text-decoration: underline;
+  /* Optional: Adds an underline on hover, focus, and active states */
+}
+
+/* Specific section link styles, if needed */
+.banner a,
+.content a,
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.banner a:hover,
+.content a:hover,
+.footer a:hover,
+.banner a:focus,
+.content a:focus,
+.footer a:focus,
+.banner a:active,
+.content a:active,
+.footer a:active {
+  color: white;
+  text-decoration: underline;
+}
 /* Banner Section */
 .banner {
   position: fixed;
@@ -509,27 +544,27 @@ footer {
 /* Landscape orientation for devices up to 950px wide */
 @media (max-width: 950px) and (orientation: landscape) {
   .banner {
-    height: 75px !important;
+    height: 80px;
     /* Reduce height to fit better in landscape mode */
   }
 
   .spacer {
-    top: 75px !important;
+    top: 80px;
     /* Adjust position to align below the new banner height */
-    height: 60px !important;
+    height: 60px;
     /* Adjust spacer height if necessary */
   }
 
   .profile-photo {
-    width: 50px !important;
+    width: 50px;
     /* Reduce image size */
-    height: 50px !important;
+    height: 50px;
     /* Ensure consistent aspect ratio */
   }
 
   .profile-photo-container,
   .profile-photo-container-right {
-    bottom: -60px !important;
+    bottom: -60px;
     /* Adjust positioning if necessary */
   }
   .profile-photo-container {
@@ -543,19 +578,19 @@ footer {
   .banner-text {
     max-width: 100%;
     text-align: right;
-    padding-top: 100px;
-    padding-bottom: 110px;
+    padding-top: 115px;
+    padding-bottom: 120px;
   }
 
   .banner h1 {
-    font-size: 1em;
+    font-size: .95em;
   }
 
   .banner p {
-    font-size: .72em;
+    font-size: .711em;
   }
   .content {
-    padding: 100px 25px 40px !important;
+    padding: 108px 25px 40px;
     /* Adjust padding to fit the new layout */
   }
   .content h2 {
