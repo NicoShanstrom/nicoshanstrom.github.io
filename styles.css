@@ -506,4 +506,65 @@ footer {
   }
 }
 
+/* Landscape orientation for devices up to 950px wide */
+@media (max-width: 950px) and (orientation: landscape) {
+  .banner {
+    height: 75px !important;
+    /* Reduce height to fit better in landscape mode */
+  }
+
+  .spacer {
+    top: 75px !important;
+    /* Adjust position to align below the new banner height */
+    height: 60px !important;
+    /* Adjust spacer height if necessary */
+  }
+
+  .profile-photo {
+    width: 50px !important;
+    /* Reduce image size */
+    height: 50px !important;
+    /* Ensure consistent aspect ratio */
+  }
+
+  .profile-photo-container,
+  .profile-photo-container-right {
+    bottom: -60px !important;
+    /* Adjust positioning if necessary */
+  }
+  .profile-photo-container {
+    left: 130px;
+  }
+
+  .profile-photo-container-right {
+    right: 130px;
+  }
+
+  .banner-text {
+    max-width: 100%;
+    text-align: right;
+    padding-top: 100px;
+    padding-bottom: 110px;
+  }
+
+  .banner h1 {
+    font-size: 1em;
+  }
+
+  .banner p {
+    font-size: .72em;
+  }
+  .content {
+    padding: 100px 25px 40px !important;
+    /* Adjust padding to fit the new layout */
+  }
+  .content h2 {
+    font-size: 1.5em;
+  }
+
+  .content p {
+    font-size: 1em;
+  }
+}
+
 
