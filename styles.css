@@ -8,42 +8,22 @@ body {
   overflow-x: hidden;
   /* Prevent horizontal overflow */
 }
-/* General link styles */
-a {
+/* Banner specific link styles */
+.banner a {
   color: white;
   text-decoration: none;
-  /* Removes the underline */
-}
-
-a:hover,
-a:focus,
-a:active {
-  color: white;
-  /* Keeps the color white on hover, focus, and active states */
-  text-decoration: underline;
-  /* Optional: Adds an underline on hover, focus, and active states */
-}
-
-/* Specific section link styles, if needed */
-.banner a,
-.content a,
-.footer a {
-  color: white;
-  text-decoration: none;
+  /* Optional: Removes underline */
 }
 
 .banner a:hover,
-.content a:hover,
-.footer a:hover,
 .banner a:focus,
-.content a:focus,
-.footer a:focus,
-.banner a:active,
-.content a:active,
-.footer a:active {
+.banner a:active {
   color: white;
+  /* Keeps the color white on hover, focus, and active states */
   text-decoration: underline;
+  /* Optional: Adds underline on hover, focus, and active states */
 }
+
 /* Banner Section */
 .banner {
   position: fixed;
@@ -59,7 +39,6 @@ a:active {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 12px;
   z-index: 5;
   /* Ensure banner is above other content */
 }
@@ -83,7 +62,7 @@ a:active {
   justify-content: flex-end;
   width: 100%;
   max-width: 1000px;
-  padding-right: 25px;
+  
   z-index: 2;
 }
 
@@ -208,9 +187,7 @@ footer {
 
   .profile-photo-container,
   .profile-photo-container-right {
-    width: 25px;
-    height: 25px;
-    bottom: 15px;
+    bottom: -53px;
     /* Ensure half-out positioning */
   }
 
@@ -219,7 +196,7 @@ footer {
   }
 
   .profile-photo-container-right {
-    right: 100px;
+    right: 40px;
   }
 
   .banner-text {
@@ -227,10 +204,11 @@ footer {
     text-align: right;
     padding-top: 75px;
     padding-bottom: 82px;
+    padding-right: 5px;
   }
 
   .banner h1 {
-    font-size: 1.11em;
+    font-size: 1.1em;
   }
 
   .banner p {
@@ -239,7 +217,9 @@ footer {
 
   .content {
     /* Adjust this value to position the content below the spacer and profile photos */
-    padding: 202px 20px 50px;
+    padding-top: 202px;
+    padding-right: 20px;
+    padding-left: 20px;
   }
 
   .content h2 {
@@ -279,18 +259,16 @@ footer {
 
   .profile-photo-container,
   .profile-photo-container-right {
-    width: 40px;
-    height: 40px;
-    bottom: 5px;
+    bottom: -55px;
     /* Ensure half-out positioning */
   }
 
   .profile-photo-container {
-    left: 35px;
+    left: 40px;
   }
 
   .profile-photo-container-right {
-    right: 95px;
+    right: 40px;
   }
 
   .banner-text {
@@ -310,7 +288,9 @@ footer {
 
   .content {
     /* Adjust this value to position the content below the spacer and profile photos */
-    padding: 225px 20px 50px;
+    padding-top: 225px;
+    padding-right: 20px;
+    padding-left: 20px;
   }
 
   .content h2 {
@@ -352,9 +332,7 @@ footer {
 
   .profile-photo-container,
   .profile-photo-container-right {
-    width: 80px;
-    height: 80px;
-    bottom: -30px;
+    bottom: -63px;
     /* Ensure half-out positioning */
   }
 
@@ -363,7 +341,7 @@ footer {
   }
 
   .profile-photo-container-right {
-    right: 90px;
+    right: 60px;
   }
 
   .banner-text {
@@ -371,6 +349,7 @@ footer {
     text-align: right;
     padding-top: 50px;
     padding-bottom: 70px;
+    padding-right: 12px;
   }
 
   .banner h1 {
@@ -425,9 +404,7 @@ footer {
 
   .profile-photo-container,
   .profile-photo-container-right {
-    width: 120px;
-    height: 120px;
-    bottom: -55px;
+    bottom: -80px;
     /* Ensure half-out positioning */
   }
 
@@ -444,6 +421,7 @@ footer {
     text-align: right;
     padding-top: 60px;
     padding-bottom: 85px;
+    padding-right: 25px;
   }
 
   .banner h1 {
@@ -457,15 +435,15 @@ footer {
   .content {
     margin-top: 49px;
     /* Adjust this value to position the content below the spacer and profile photos */
-    padding: 250px 40px 40px;
+    padding: 255px 40px 40px;
   }
 
   .content h2 {
-    font-size: 1.9em;
+    font-size: 2em;
   }
 
   .content p {
-    font-size: 1.1em;
+    font-size: 1.3em;
   }
 }
 /* Desktops and Larger Laptops (1280px and up) */
@@ -481,7 +459,7 @@ footer {
     /* Position it right below the banner */
     left: 0;
     right: 0;
-    height: 120px;
+    height: 100px;
     /* Adjust this height to match the height of the profile photos */
     background-color: #fff8bf;
     z-index: 4;
@@ -498,9 +476,9 @@ footer {
 
   .profile-photo-container,
   .profile-photo-container-right {
-    width: 150px;
-    height: 150px;
-    bottom: -70px;
+  
+
+    bottom: -95px;
     /* Ensure half-out positioning */
   }
 
@@ -529,7 +507,7 @@ footer {
 
   .content {
     /* Adjust this value to position the content below the spacer and profile photos */
-    padding: 385px 50px 50px;
+    padding: 360px 50px 50px;
   }
 
   .content h2 {
@@ -544,61 +522,66 @@ footer {
 /* Landscape orientation for devices up to 950px wide */
 @media (max-width: 950px) and (orientation: landscape) {
   .banner {
-    height: 80px;
+    height: 90px;
     /* Reduce height to fit better in landscape mode */
   }
 
   .spacer {
-    top: 80px;
+    top: 90px;
     /* Adjust position to align below the new banner height */
-    height: 60px;
+    height: 40px;
     /* Adjust spacer height if necessary */
   }
 
   .profile-photo {
-    width: 50px;
+    width: 60px;
     /* Reduce image size */
-    height: 50px;
+    height: 60px;
     /* Ensure consistent aspect ratio */
   }
 
   .profile-photo-container,
   .profile-photo-container-right {
-    bottom: -60px;
+    bottom: -40px;
     /* Adjust positioning if necessary */
   }
   .profile-photo-container {
-    left: 130px;
+    left: 150px;
   }
 
   .profile-photo-container-right {
-    right: 130px;
+    right: 150px;
   }
-
+  .banner-content {
+    justify-content: center;
+  }
+  
   .banner-text {
     max-width: 100%;
-    text-align: right;
-    padding-top: 115px;
+    text-align: center;
+    padding-top: 135px;
     padding-bottom: 120px;
   }
 
   .banner h1 {
-    font-size: .95em;
+    font-size: 1.2em;
   }
 
   .banner p {
-    font-size: .711em;
+    font-size: .75em;
   }
   .content {
-    padding: 108px 25px 40px;
+    padding-top: 100px;
+    padding-right: 20px;
+    padding-left: 20px;
     /* Adjust padding to fit the new layout */
   }
   .content h2 {
-    font-size: 1.5em;
+    font-size: 1.3em;
   }
 
   .content p {
-    font-size: 1em;
+    font-size: .9em;
   }
 }
 
